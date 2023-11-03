@@ -1,0 +1,80 @@
+$size-btn-nav: 5%;
+.camera-cont {
+  position: absolute;
+  width: 138vh;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 100%;
+  background-color: red;
+  .camera {
+    position: relative;
+    aspect-ratio: 206 / 150;
+    .camera-img {
+      width: 100%;
+    }
+  }
+  .navigation-btn {
+    width: 21%;
+    top: 73.8%;
+    left: 75.4%;
+  }
+  .btn-nav {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  #btn-info {
+    position: absolute;
+    top: 32.6%;
+    left: 8.45%;
+    width: 4.7%;
+  }
+  #btn-menu {
+    position: absolute;
+    top: 32.6%;
+    left: 15.1%;
+    width: 4.7%;
+  }
+  #btn-record {
+    position: absolute;
+    top: 30.5%;
+    left: 74.3%;
+    width: $size-btn-nav;
+  }
+  #btn-profil {
+    position: absolute;
+    top: 44.5%;
+    left: 68.8%;
+    width: $size-btn-nav;
+  }
+  #btn-research {
+    position: absolute;
+    top: 53.5%;
+    left: 68.8%;
+    width: $size-btn-nav;
+  }
+  #btn-setting {
+    position: absolute;
+    top: 53.5%;
+    left: 76.9%;
+    width: $size-btn-nav;
+  }
+  #btn-play {
+    position: absolute;
+    top: 92.7%;
+    left: 72.8%;
+    width: $size-btn-nav;
+  }
+  #btn-back {
+    position: absolute;
+    top: 92.7%;
+    left: 79.7%;
+    width: $size-btn-nav;
+  }
+  #btn-call {
+    position: absolute;
+    top: 32%;
+    left: 64.3%;
+    width: 7.4%;
+  }
+}

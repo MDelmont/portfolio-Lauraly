@@ -1,29 +1,28 @@
-import { useState } from "react";
-
-
-const Camera = ({ name }) => {
-  const buttonId = `btn-${name}`;
-  const [imagePath, setImagePath] = useState(
-    `../src/assets/img/ui/buttons/${name}.svg`
-  );
-
-  const handleMouseDown = () => {
-    setImagePath(`../src/assets/img/ui/buttons/${name}-clic.svg`);
-  };
-  const handleMouseUp = () => {
-    setImagePath(`../src/assets/img/ui/buttons/${name}.svg`);
-  };
+import Navigation from "./navigation.jsx";
+import Button from "./Button.jsx";
+import "../../src/assets/styles/camera.scss";
+const Camera = () => {
   return (
-    <div
-      onMouseDown={handleMouseDown}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseUp}
-      id={buttonId}
-      className="btn-nav"
-    >
-      <img src={imagePath} alt={name} />
+    <div className="camera-cont">
+      <div className="camera">
+        <img
+          className="camera-img"
+          src="../src/assets/img/ui/camera.png"
+          alt=""
+        />
+      </div>
+      <Navigation />
+      <Button name="center" iconName="info" />
+      <Button name="center" iconName="menu" />
+      <Button name="center" iconName="call" />
+      <Button name="center" iconName="record" />
+      <Button name="center" iconName="profil" />
+      <Button name="center" iconName="research" />
+      <Button name="center" iconName="setting" />
+      <Button name="center" iconName="play" />
+      <Button name="center" iconName="back" />
     </div>
   );
 };
 
-export default Button;
+export default Camera;

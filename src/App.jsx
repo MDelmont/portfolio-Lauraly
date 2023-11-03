@@ -1,12 +1,9 @@
-import Button from "./components/Button.jsx";
+import Camera from "./components/camera.jsx";
+import "../src/assets/styles/app.scss";
 function App() {
   return (
     <div>
-      <Button name="center" />
-      <Button name="right" />
-      <Button name="left" />
-      <Button name="top" />
-      <Button name="down" />
+      <Camera />
     </div>
   );
 }

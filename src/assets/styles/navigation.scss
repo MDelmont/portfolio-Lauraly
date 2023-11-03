@@ -1,0 +1,62 @@
+$decalageBord: 8%;
+$sizeButton: 55%;
+$sizeIcon: 15%;
+$sizeBtnCenter: 38%;
+$margeIconNav: 10;
+
+.navigation-btn {
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  width: 250px;
+  transform: translateX(-50%) translateY(-50%);
+  #btn-ok {
+    width: $sizeBtnCenter;
+    height: $sizeBtnCenter;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    .icon-nav {
+      width: 35%;
+    }
+  }
+  #btn-down-arrow {
+    width: $sizeButton;
+    bottom: $decalageBord;
+    left: 50%;
+    transform: translateX(-50%) translateY(4%);
+    .icon-nav {
+      width: $sizeIcon;
+      transform: translateX(-50%) translateY(-50% + $margeIconNav);
+    }
+  }
+  #btn-top-arrow {
+    width: $sizeButton;
+    top: $decalageBord;
+    left: 50%;
+    transform: translateX(-50%);
+    .icon-nav {
+      width: $sizeIcon;
+      transform: translateX(-50%) translateY(-50% - $margeIconNav);
+    }
+  }
+  #btn-right-arrow {
+    height: $sizeButton;
+    top: 50%;
+    right: $decalageBord;
+    transform: translateY(-50%);
+    .icon-nav {
+      height: $sizeIcon;
+      transform: translateX(-50% + $margeIconNav) translateY(-50%);
+    }
+  }
+  #btn-left-arrow {
+    height: $sizeButton;
+    top: 50%;
+    left: $decalageBord;
+    transform: translateY(-50%);
+    .icon-nav {
+      height: $sizeIcon;
+      transform: translateX(-50% - $margeIconNav) translateY(-50%);
+    }
+  }
+}
