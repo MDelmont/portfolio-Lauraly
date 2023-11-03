@@ -1,0 +1,25 @@
+#btn-center {
+  width: 100px;
+}
+
+.btn-nav {
+  user-select: none;
+  /* ignore select move image on page */
+
+  -webkit-user-drag: none;
+  /* ignore drag image on page */
+
+  -webkit-touch-callout: none;
+  /* ignore callout image on page */
+
+  -webkit-user-select: none;
+  /* ignore select image on page */
+
+  -moz-user-select: none;
+  /* ignore select image on page */
+
+  -ms-user-select: none;
+  /* ignore select image on page */
+
+  max-width: 200px;
+}
