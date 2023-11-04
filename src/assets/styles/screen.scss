@@ -1,0 +1,5 @@
+@import "theme";
+
+.screen {
+  background-color: map-get($ColorApp, bg);
+}
