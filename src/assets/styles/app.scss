@@ -1,3 +1,9 @@
+@import "theme";
 body {
   margin: 0;
+  background-color: map-get($ColorApp, bg);
+}
+
+p {
+  color: map-get($ColorApp, fontColor);
 }
