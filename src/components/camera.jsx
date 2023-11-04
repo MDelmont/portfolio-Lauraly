@@ -1,5 +1,7 @@
 import Navigation from "./navigation.jsx";
 import Button from "./Button.jsx";
+import Screen from "./screen/screen.jsx";
+
 import "../../src/assets/styles/camera.scss";
 const Camera = () => {
   return (
@@ -21,6 +23,7 @@ const Camera = () => {
       <Button name="center" iconName="setting" />
       <Button name="center" iconName="play" />
       <Button name="center" iconName="back" />
+      <Screen />
     </div>
   );
 };

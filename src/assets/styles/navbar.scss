@@ -1,30 +1,84 @@
+@import "theme";
+$ColorAppMap: (
+  acceuil: yellow,
+  profil: red,
+  parcours: blue,
+  competences: green,
+  contact: purple,
+);
+$order: 0;
 .navBar {
   position: relative;
   display: flex;
-  justify-content: space-between;
+
+  justify-content: space-around;
+
   width: 100%;
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: antiquewhite;
-    width: 100%; // Ajustez la largeur comme souhaité
-    height: 1px; // Pour s'étendre sur toute la hauteur de la .navBar
-    margin: 0 10px; // Ajoutez de la marge pour espacer la barre blanche du contenu
-    top: 43%;
+
+  height: 30%;
+
+  @each $class, $color in $ColorAppMap {
+    $order: $order + 1;
+    &.#{$class} {
+      &::after {
+        background-color: map-get($ColorApp, $color);
+      }
+      .part-nav {
+        &:nth-child(#{$order}) {
+          .icon-nav-cont {
+            background-color: map-get($ColorApp, $color);
+          }
+          .title-part-nav {
+            color: map-get($ColorApp, $color);
+          }
+        }
+        .icon-nav-cont {
+          &::after {
+            background-color: map-get($ColorApp, $color);
+          }
+        }
+      }
+    }
   }
 
   .part-nav {
+    position: relative;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    vertical-align: center;
 
-    .icon-nav {
-      width: 15%;
-      padding-top: 3%;
-      padding-bottom: 3%;
+    .icon-nav-cont {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: map-get($ColorApp, yellow);
+        width: 100%; // Ajustez la largeur comme souhaité
+        height: 1px; // Pour s'étendre sur toute la hauteur de la .navBar
+        left: 0%;
+        top: 100%;
+      }
+
+      .icon-nav {
+        top: 50%;
+        padding-top: 5px;
+        width: 20%;
+      }
     }
     .title-part-nav {
+      flex: 1;
+      font-size: 80%;
     }
   }
 }
