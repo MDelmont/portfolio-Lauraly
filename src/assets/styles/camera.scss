@@ -25,21 +25,27 @@ $size-btn-nav: 5%;
   }
   #btn-info {
     position: absolute;
-    top: 32.6%;
+    top: 32.5%;
     left: 8.45%;
     width: 4.7%;
+    .icon-nav {
+      width: 60%;
+    }
   }
   #btn-menu {
     position: absolute;
-    top: 32.6%;
-    left: 15.1%;
+    top: 32.5%;
+    left: 15.08%;
     width: 4.7%;
+    .icon-nav {
+      width: 60%;
+    }
   }
   #btn-record {
     position: absolute;
-    top: 30.5%;
-    left: 74.3%;
-    width: $size-btn-nav;
+    top: 30.4%;
+    left: 74.4%;
+    width: 4.7%;
   }
   #btn-profil {
     position: absolute;
@@ -61,14 +67,14 @@ $size-btn-nav: 5%;
   }
   #btn-play {
     position: absolute;
-    top: 92.7%;
-    left: 72.8%;
+    top: 92.8%;
+    left: 72.87%;
     width: $size-btn-nav;
   }
   #btn-back {
     position: absolute;
-    top: 92.7%;
-    left: 79.7%;
+    top: 92.8%;
+    left: 79.8%;
     width: $size-btn-nav;
   }
   #btn-call {
@@ -76,5 +82,8 @@ $size-btn-nav: 5%;
     top: 32%;
     left: 64.3%;
     width: 7.4%;
+  }
+  .icon-nav {
+    width: 40%;
   }
 }

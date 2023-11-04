@@ -1,0 +1,30 @@
+.navBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: antiquewhite;
+    width: 100%; // Ajustez la largeur comme souhaité
+    height: 1px; // Pour s'étendre sur toute la hauteur de la .navBar
+    margin: 0 10px; // Ajoutez de la marge pour espacer la barre blanche du contenu
+    top: 43%;
+  }
+
+  .part-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .icon-nav {
+      width: 15%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+    .title-part-nav {
+    }
+  }
+}
