@@ -1,0 +1,16 @@
+@import "theme";
+
+.line {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+
+  background-color: map-get($ColorApp, bgFont);
+
+
+}

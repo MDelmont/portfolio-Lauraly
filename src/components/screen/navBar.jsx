@@ -1,14 +1,13 @@
 import PartNav from "./partNav.jsx";
 import "../../../src/assets/styles/navbar.scss";
-import { useState } from "react";
-const NavBar = () => {
-  const [classNameNav, setClassNameNav] = useState("navBar acceuil");
+
+const NavBar = ({ onClick }) => {
 
   const handleNavClick = (className) => {
-    setClassNameNav(`navBar ${className}`);
+    onClick(`navBar ${className}`);
   };
   return (
-    <div className={classNameNav}>
+    <div className="navBar">
       <PartNav iconName="home" title="ACCEUIL" onClick={handleNavClick} />
       <PartNav iconName="profil" title="PROFIL" onClick={handleNavClick} />
       <PartNav iconName="research" title="PARCOURS" onClick={handleNavClick} />

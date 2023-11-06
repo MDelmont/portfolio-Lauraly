@@ -1,0 +1,15 @@
+@import "theme";
+.info {
+  background-color: map-get($ColorApp, bgFont);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 90%;
+  p {
+    margin: 1px;
+  }
+  .p-title-info {
+    font-weight: bold;
+  }
+}

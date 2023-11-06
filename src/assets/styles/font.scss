@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "SF-Pro-Display";
+  src: url("../fonts/SF-Pro-Display-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display";
+  src: url("../fonts/SF-Pro-Display-Semibold.otf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+p {
+  font-family: "SF-Pro-Display";
+}

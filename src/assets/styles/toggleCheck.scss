@@ -1,0 +1,19 @@
+@import "theme";
+.toggle-check-cont {
+  background-color: map-get($ColorApp, toggleColor);
+  height: 100%;
+  aspect-ratio: 2/1;
+  border-radius: 1000px; /* Ajoutez cette ligne pour arrondir les bords */
+  .toggle-check {
+    position: relative;
+
+    height: 80%;
+    width: 40%;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: map-get($ColorApp, fontColor);
+    transition: left 0.3s;
+  }
+}
