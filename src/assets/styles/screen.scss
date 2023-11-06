@@ -1,5 +1,46 @@
 @import "theme";
-
+$order: 0;
 .screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: map-get($ColorApp, bg);
+
+  @each $class, $color in $ColorAppMap {
+    $order: $order + 1;
+    &.#{$class} {
+      .content {
+        .line {
+          &.active {
+            background-color: map-get($ColorApp, $color);
+          }
+        }
+        .toggle-check-cont {
+        
+            background-color: map-get($ColorApp, $color);
+          
+        }
+      }
+      .navBar {
+        &::after {
+          background-color: map-get($ColorApp, $color);
+        }
+        .part-nav {
+          &:nth-child(#{$order}) {
+            .icon-nav-cont {
+              background-color: map-get($ColorApp, $color);
+            }
+            .title-part-nav {
+              color: map-get($ColorApp, $color);
+            }
+          }
+          .icon-nav-cont {
+            &::after {
+              background-color: map-get($ColorApp, $color);
+            }
+          }
+        }
+      }
+    }
+  }
 }

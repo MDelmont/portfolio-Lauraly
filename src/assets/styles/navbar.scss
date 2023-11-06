@@ -1,11 +1,5 @@
 @import "theme";
-$ColorAppMap: (
-  acceuil: yellow,
-  profil: red,
-  parcours: blue,
-  competences: green,
-  contact: purple,
-);
+
 $order: 0;
 .navBar {
   position: relative;
@@ -14,48 +8,22 @@ $order: 0;
   justify-content: space-around;
 
   width: 100%;
-
-  height: 30%;
-
-  @each $class, $color in $ColorAppMap {
-    $order: $order + 1;
-    &.#{$class} {
-      &::after {
-        background-color: map-get($ColorApp, $color);
-      }
-      .part-nav {
-        &:nth-child(#{$order}) {
-          .icon-nav-cont {
-            background-color: map-get($ColorApp, $color);
-          }
-          .title-part-nav {
-            color: map-get($ColorApp, $color);
-          }
-        }
-        .icon-nav-cont {
-          &::after {
-            background-color: map-get($ColorApp, $color);
-          }
-        }
-      }
-    }
-  }
+  flex-grow: 1;
+  // height: 26%;
 
   .part-nav {
     position: relative;
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    vertical-align: center;
-
+    cursor: pointer;
     .icon-nav-cont {
       position: relative;
       text-align: center;
       width: 100%;
       height: 100%;
-      flex: 1;
+      flex-grow: 3;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -73,11 +41,13 @@ $order: 0;
       .icon-nav {
         top: 50%;
         padding-top: 5px;
-        width: 20%;
+        width: 22%;
       }
     }
     .title-part-nav {
-      flex: 1;
+      vertical-align: center;
+      align-items: center;
+      flex-grow: 1;
       font-size: 80%;
     }
   }
