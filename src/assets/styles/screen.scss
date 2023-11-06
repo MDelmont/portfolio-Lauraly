@@ -16,9 +16,7 @@ $order: 0;
           }
         }
         .toggle-check-cont {
-        
-            background-color: map-get($ColorApp, $color);
-          
+          background-color: map-get($ColorApp, $color);
         }
       }
       .navBar {
@@ -37,6 +35,22 @@ $order: 0;
           .icon-nav-cont {
             &::after {
               background-color: map-get($ColorApp, $color);
+            }
+          }
+        }
+      }
+      .line {
+        &.grid {
+          .icon-list {
+            .logiciel-Card {
+              &.active {
+                .logo-cont {
+                  background-color: map-get($ColorApp, $color);
+                }
+                .p-title-card {
+                  color: map-get($ColorApp, $color);
+                }
+              }
             }
           }
         }

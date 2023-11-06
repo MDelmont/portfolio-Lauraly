@@ -261,7 +261,7 @@ const content = {
       title: "Logiciels",
       content: [
         {
-          type: "icon",
+          type: "icon-list",
           content: [
             "Photoshop",
             "Lightroom",

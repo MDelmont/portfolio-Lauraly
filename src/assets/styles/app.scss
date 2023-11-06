@@ -4,6 +4,7 @@ body {
   background-color: map-get($ColorApp, bg);
 }
 
-p {
+p,
+a {
   color: map-get($ColorApp, fontColor);
 }

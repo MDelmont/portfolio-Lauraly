@@ -1,10 +1,8 @@
+import {removeAccents} from '../utils.js'
 const PartNav = ({ iconName, title, onClick }) => {
   const iconUse = `../../src/assets/img/icons/${iconName}.svg`; // Corrected the path
 
-  // Fonction pour enlever les accents
-  const removeAccents = (str) => {
-    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  };
+ 
   const handleNavClick = () => {
     onClick(removeAccents(title.toLowerCase())); // Appelez la fonction onClick avec le titre
   };

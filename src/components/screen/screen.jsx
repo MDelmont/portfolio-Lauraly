@@ -11,68 +11,17 @@ const Screen = () => {
   };
   const data = [
     {
-      type: "info",
-      title: "Sexe",
-      info: "Femme",
-    },
-    {
-      type: "info",
-      title: "Date de naissance",
-      info: "16 novembre 1996 (26 ans)",
-    },
-    {
-      type: "info",
-      title: "Localisation",
-      info: "Toulouse (31)",
-    },
-    {
-      type: "info",
-      title: "Moyen de locomotion",
-      info: "Véhicule personnel",
-    },
-    {
-      type: "info",
-      title: "Caractéristique particulière",
-      info: "Tatouée",
-    },
-    {
-      type: "details",
-      title: "Hobbies",
+      type: "icon-list",
       content: [
-        {
-          type: "title",
-          title: "Sélection des hobbies...",
-        },
-        {
-          type: "toggle",
-          title: "Musique (Guitare, piano)",
-        },
-        {
-          type: "toggle",
-          title: "Création manuelles (coture, bijoux, etc)",
-        },
-        {
-          type: "toggle",
-          title: "Photogaphie",
-        },
-        {
-          type: "toggle",
-          title: "Vidéo",
-        },
-        {
-          type: "toggle",
-          title: "Illusation (type cartoon, paysages)",
-        },
+        "Photoshop",
+        "Lightroom",
+        "PremierePro",
+        "Xd",
+        "InDesign",
+        "Illustrator",
+        "Procreate",
+        "Canva",
       ],
-    },
-    {
-      type: "toggle",
-      title: "Musique (Guitare, piano)",
-    },
-    {
-      type: "url",
-      title: "Site professionnel",
-      info: "https://www.lauralymonceauphotographe.fr/",
     },
   ];
 
